@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Kiran Academy — #1 IT Training Institute in Pune</title>
+  <meta name="description" content="Job-ready IT courses in Pune. Java, Python, Software Testing, Data Science, MERN Stack. 25,000+ alumni. 96% placement rate. Since 2012." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════ CURSOR ══════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-box">KA</div>
+        <span>Kiran<span class="logo-accent">Academy</span></span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#why" class="nav-link">Why Us</a>
+        <a href="#placements" class="nav-link">Placements</a>
+        <a href="#locations" class="nav-link">Branches</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#demo" class="nav-cta-btn">
+          <span>Free Demo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-body">
+      <div class="hero-pill">
+        <span class="pill-live"></span>
+        #1 IT Institute in Pune · Since 2012
+      </div>
+
+      <h1 class="hero-heading">
+        Launch Your<br/>
+        <span class="typewriter-wrap">
+          <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+        </span><br/>
+        Career in IT
+      </h1>
+
+      <p class="hero-sub">
+        Live classes by working engineers. Real projects. Placement support until you're hired —
+        not just until your course ends.
+      </p>
+
+      <div class="hero-bullets">
+        <span><i class="dot green"></i>Small batches — personal code reviews</span>
+        <span><i class="dot green"></i>Tools companies actually use today</span>
+        <span><i class="dot green"></i>Mock interviews + resume reviews</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#demo" class="btn-neon">
+          Book Free Demo
+          <span class="btn-glow"></span>
+        </a>
+        <a href="tel:+918888809416" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.06 2.22 2 2 0 012.03 0h3a2 2 0 012 1.72c.13 1 .38 1.98.72 2.91a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.17-1.17a2 2 0 012.11-.45c.93.34 1.91.6 2.91.72A2 2 0 0122 14.92z"/></svg>
+          +91 8888809416
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat"><span class="hstat-num">25K+</span><span class="hstat-lbl">Alumni</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-num">96%</span><span class="hstat-lbl">Placed</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-num">4.8★</span><span class="hstat-lbl">Google</span></div>
+        <div class="hstat-sep"></div>
+        <div class="hstat"><span class="hstat-num">14+</span><span class="hstat-lbl">Years</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-ring ring-3"></div>
+      <div class="orbit-center">
+        <div class="orbit-core">KA</div>
+      </div>
+      <div class="orbit-node node-java">Java</div>
+      <div class="orbit-node node-python">Python</div>
+      <div class="orbit-node node-react">React</div>
+      <div class="orbit-node node-ml">ML</div>
+      <div class="orbit-node node-qa">QA</div>
+      <div class="orbit-node node-data">Data</div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE STATS BAR ══════════ -->
+  <div class="stats-bar">
+    <div class="stats-track" id="statsTrack">
+      <span>⚡ 25,000+ Students Trained</span>
+      <span class="sep">✦</span>
+      <span>🎯 96% Placement Rate</span>
+      <span class="sep">✦</span>
+      <span>🏢 1750+ Hiring Partners</span>
+      <span class="sep">✦</span>
+      <span>⭐ 4.8 Google Rating</span>
+      <span class="sep">✦</span>
+      <span>📍 4 Branches + Online</span>
+      <span class="sep">✦</span>
+      <span>🎓 14+ Years in Pune</span>
+      <span class="sep">✦</span>
+      <span>⚡ 25,000+ Students Trained</span>
+      <span class="sep">✦</span>
+      <span>🎯 96% Placement Rate</span>
+      <span class="sep">✦</span>
+      <span>🏢 1750+ Hiring Partners</span>
+      <span class="sep">✦</span>
+      <span>⭐ 4.8 Google Rating</span>
+      <span class="sep">✦</span>
+      <span>📍 4 Branches + Online</span>
+      <span class="sep">✦</span>
+      <span>🎓 14+ Years in Pune</span>
+    </div>
+  </div>
+
+  <!-- ══════════ COURSES ══════════ -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-tag">OUR PROGRAMS</div>
+      <h2 class="section-title">Pick the path that<br/><span class="neon-text">gets you hired</span></h2>
+      <p class="section-sub">Every course is built around real job roles — not textbooks. You finish with a portfolio, not just a certificate.</p>
+
+      <div class="courses-grid">
+
+        <div class="course-card" data-tilt>
+          <div class="card-glow"></div>
+          <div class="course-header">
+            <div class="course-emoji">☕</div>
+            <div class="course-badge badge-green">Placement Oriented</div>
+          </div>
+          <div class="course-salary">₹3.5 – 8 LPA</div>
+          <h3>Java Full Stack</h3>
+          <p>Core Java, Spring Boot, Hibernate, REST APIs, MySQL, and deployable real-world projects.</p>
+          <div class="course-chips">
+            <span>Core Java</span><span>Spring Boot</span><span>Hibernate</span><span>MySQL</span><span>HTML/CSS</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-dur">⏱ 6 months</span>
+            <a href="#demo" class="card-btn">Enroll →</a>
+          </div>
+        </div>
+
+        <div class="course-card featured-card" data-tilt>
+          <div class="card-glow glow-purple"></div>
+          <div class="featured-ribbon">HOT</div>
+          <div class="course-header">
+            <div class="course-emoji">🐍</div>
+            <div class="course-badge badge-purple">Placement Oriented</div>
+          </div>
+          <div class="course-salary">₹3.5 – 7 LPA</div>
+          <h3>Python Full Stack</h3>
+          <p>Python, Django/Flask, database, REST APIs, and front-end skills with placement-focused capstone projects.</p>
+          <div class="course-chips">
+            <span>Python</span><span>Django</span><span>Flask</span><span>MySQL</span><span>HTML/CSS</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-dur">⏱ 6 months</span>
+            <a href="#demo" class="card-btn">Enroll →</a>
+          </div>
+        </div>
+
+        <div class="course-card" data-tilt>
+          <div class="card-glow glow-cyan"></div>
+          <div class="course-header">
+            <div class="course-emoji">🔍</div>
+            <div class="course-badge badge-cyan">Placement Oriented</div>
+          </div>
+          <div class="course-salary">₹3 – 6 LPA</div>
+          <h3>Software Testing</h3>
+          <p>Manual testing, Selenium automation, TestNG, Jira, API testing, and real QA workflows.</p>
+          <div class="course-chips">
+            <span>Selenium</span><span>Java</span><span>TestNG</span><span>Jira</span><span>Postman</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-dur">⏱ 4 months</span>
+            <a href="#demo" class="card-btn">Enroll →</a>
+          </div>
+        </div>
+
+        <div class="course-card" data-tilt>
+          <div class="card-glow glow-yellow"></div>
+          <div class="course-header">
+            <div class="course-emoji">📊</div>
+            <div class="course-badge badge-yellow">Data Science</div>
+          </div>
+          <div class="course-salary">₹4 – 9 LPA</div>
+          <h3>Data Science & ML</h3>
+          <p>Python, statistics, machine learning, model building, Pandas, and applied data science projects.</p>
+          <div class="course-chips">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Matplotlib</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-dur">⏱ 6 months</span>
+            <a href="#demo" class="card-btn">Enroll →</a>
+          </div>
+        </div>
+
+        <div class="course-card" data-tilt>
+          <div class="card-glow glow-pink"></div>
+          <div class="course-header">
+            <div class="course-emoji">📈</div>
+            <div class="course-badge badge-pink">Data Science</div>
+          </div>
+          <div class="course-salary">₹3 – 6.5 LPA</div>
+          <h3>Data Analytics</h3>
+          <p>Excel, SQL, Python basics, Power BI dashboards, and reporting workflows for business decisions.</p>
+          <div class="course-chips">
+            <span>Excel</span><span>SQL</span><span>Power BI</span><span>Python</span><span>Tableau</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-dur">⏱ 4 months</span>
+            <a href="#demo" class="card-btn">Enroll →</a>
+          </div>
+        </div>
+
+        <div class="course-card" data-tilt>
+          <div class="card-glow glow-orange"></div>
+          <div class="course-header">
+            <div class="course-emoji">⚛️</div>
+            <div class="course-badge badge-orange">Specialized</div>
+          </div>
+          <div class="course-salary">₹3.5 – 7.5 LPA</div>
+          <h3>MERN Full Stack</h3>
+          <p>React, Node.js, Express, MongoDB, REST APIs, and full deployment pipelines from scratch.</p>
+          <div class="course-chips">
+            <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Angular</span>
+          </div>
+          <div class="course-footer">
+            <span class="course-dur">⏱ 5 months</span>
+            <a href="#demo" class="card-btn">Enroll →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ WHY US — BENTO GRID ══════════ -->
+  <section class="section bento-section" id="why">
+    <div class="container">
+      <div class="section-tag">WHY KIRAN ACADEMY</div>
+      <h2 class="section-title">Four things we do<br/><span class="neon-text">differently</span></h2>
+
+      <div class="bento-grid">
+        <div class="bento-card bento-large">
+          <div class="bento-number">15+</div>
+          <h3>Years of Industry Trainers</h3>
+          <p>Every trainer is an active engineer — not a full-time teacher. They bring live interview patterns, real codebase structure, and code reviews just like a tech lead would.</p>
+          <div class="bento-quote">
+            <div class="bq-avatar">RS</div>
+            <blockquote>"My trainer was working at a product company while teaching us. That made all the difference in interviews."<br/><cite>— Rahul Sharma, Java Dev @ Infosys</cite></blockquote>
+          </div>
+          <div class="bento-icon-bg">👨‍💻</div>
+        </div>
+
+        <div class="bento-card bento-sm">
+          <div class="bento-number neon-cyan">3+</div>
+          <h3>Real Projects</h3>
+          <p>GitHub portfolio interviewers can actually open and run. E-commerce, dashboards, REST APIs — built from scratch.</p>
+          <div class="bento-icon-bg">🏗️</div>
+        </div>
+
+        <div class="bento-card bento-sm">
+          <div class="bento-number neon-green">96%</div>
+          <h3>Placement Rate</h3>
+          <p>Mock interviews modelled on real company formats. Resume reviewed and rewritten by placement experts.</p>
+          <div class="bento-icon-bg">🎯</div>
+        </div>
+
+        <div class="bento-card bento-md">
+          <div class="bento-number neon-purple">1750+</div>
+          <h3>Hiring Companies</h3>
+          <p>Salary negotiation coaching. Alumni network across Pune, Nagpur, and beyond. Career guidance for your second and third job too.</p>
+          <div class="bento-quote">
+            <div class="bq-avatar">AW</div>
+            <blockquote>"Even after joining Persistent they helped me negotiate. No other institute does this."<br/><cite>— Anjali W., MERN Dev @ Persistent</cite></blockquote>
+          </div>
+          <div class="bento-icon-bg">🏢</div>
+        </div>
+
+        <div class="bento-card bento-md">
+          <div class="bento-number neon-yellow">25K+</div>
+          <h3>Students Placed</h3>
+          <p>Direct referrals to 1750+ companies — no job portals, no cold applying. Our placement team connects you directly.</p>
+          <div class="bento-quote">
+            <div class="bq-avatar">RD</div>
+            <blockquote>"Interviewer opened my GitHub project during the call. Got the offer the same week."<br/><cite>— Rohit D., Full Stack @ LTIMindtree</cite></blockquote>
+          </div>
+          <div class="bento-icon-bg">🚀</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ LIVE PLACEMENTS ══════════ -->
+  <section class="section placements-section" id="placements">
+    <div class="container">
+      <div class="section-tag">LIVE PLACEMENTS</div>
+      <h2 class="section-title">Real students.<br/><span class="neon-text">Real offers.</span></h2>
+      <p class="section-sub">25,000+ students placed — and counting. Updated in real time.</p>
+    </div>
+    <div class="placements-wrap">
+      <div class="placements-row" id="placementsRow1"></div>
+      <div class="placements-row reverse" id="placementsRow2"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ JOURNEY STEPS ══════════ -->
+  <section class="section journey-section" id="journey">
+    <div class="container">
+      <div class="section-tag">THE PROCESS</div>
+      <h2 class="section-title">Your road to an<br/><span class="neon-text">offer letter</span></h2>
+
+      <div class="timeline">
+        <div class="tl-item" data-aos>
+          <div class="tl-dot"><span>01</span></div>
+          <div class="tl-content">
+            <div class="tl-icon">🎯</div>
+            <h3>Industry-Led Training</h3>
+            <p>Live classes by working software professionals — real tools, real code, real problems from day one.</p>
+          </div>
+        </div>
+        <div class="tl-item" data-aos>
+          <div class="tl-dot"><span>02</span></div>
+          <div class="tl-content">
+            <div class="tl-icon">🏗️</div>
+            <h3>Build Real Projects</h3>
+            <p>Create 3+ deployable applications with a GitHub portfolio interviewers can open and evaluate.</p>
+          </div>
+        </div>
+        <div class="tl-item" data-aos>
+          <div class="tl-dot"><span>03</span></div>
+          <div class="tl-content">
+            <div class="tl-icon">🎭</div>
+            <h3>Mock Interviews & Resume</h3>
+            <p>Multiple rounds of technical + HR mock interviews. Resume crafted to pass ATS filters.</p>
+          </div>
+        </div>
+        <div class="tl-item" data-aos>
+          <div class="tl-dot"><span>04</span></div>
+          <div class="tl-content">
+            <div class="tl-icon">📋</div>
+            <h3>Direct Job Referrals</h3>
+            <p>Our placement team connects you to 1750+ hiring companies directly. No cold applying.</p>
+          </div>
+        </div>
+        <div class="tl-item" data-aos>
+          <div class="tl-dot"><span>05</span></div>
+          <div class="tl-content">
+            <div class="tl-icon">💡</div>
+            <h3>Interview Coaching</h3>
+            <p>Company briefing, likely questions, salary expectations, and what to avoid — before every interview.</p>
+          </div>
+        </div>
+        <div class="tl-item" data-aos>
+          <div class="tl-dot"><span>06</span></div>
+          <div class="tl-content">
+            <div class="tl-icon">🏆</div>
+            <h3>Offer Letter + Beyond</h3>
+            <p>Salary negotiation support, onboarding guidance, and alumni network. We stay with you for life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SALARY ══════════ -->
+  <section class="section salary-section" id="salary">
+    <div class="container">
+      <div class="section-tag">EARNING POTENTIAL</div>
+      <h2 class="section-title">What our graduates<br/><span class="neon-text">typically earn</span></h2>
+
+      <div class="salary-track">
+        <div class="salary-node">
+          <div class="sn-ring"></div>
+          <div class="sn-label">Entry Level</div>
+          <div class="sn-range">₹3–5 LPA</div>
+          <div class="sn-role">Junior Dev / QA / Analyst</div>
+          <ul><li>Junior Java / Python Developer</li><li>Manual / Automation QA</li><li>Data Analyst</li></ul>
+        </div>
+        <div class="salary-arrow">→</div>
+        <div class="salary-node featured-node">
+          <div class="sn-ring featured-ring"></div>
+          <div class="sn-label">1–2 Years</div>
+          <div class="sn-range neon-text">₹5–8 LPA</div>
+          <div class="sn-role">Developer / Test Lead</div>
+          <ul><li>Full Stack Developer</li><li>SDET / Automation Lead</li><li>BI Analyst</li></ul>
+        </div>
+        <div class="salary-arrow">→</div>
+        <div class="salary-node">
+          <div class="sn-ring ring-gold"></div>
+          <div class="sn-label">3+ Years</div>
+          <div class="sn-range">₹8–15 LPA</div>
+          <div class="sn-role">Senior Dev / Tech Lead</div>
+          <ul><li>Senior Software Engineer</li><li>Tech Lead / Architect</li><li>Data Science Lead</li></ul>
+        </div>
+      </div>
+      <p class="salary-note">* Based on student-reported placement outcomes. Individual results vary.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ HIRING PARTNERS ══════════ -->
+  <section class="section partners-section" id="partners">
+    <div class="container">
+      <div class="section-tag">HIRING NETWORK</div>
+      <h2 class="section-title">Our students work at<br/><span class="neon-text">1750+ companies</span></h2>
+    </div>
+    <div class="partners-rows">
+      <div class="partners-row" id="pRow1">
+        <span>Infosys</span><span>TCS</span><span>Wipro</span><span>Cognizant</span><span>Accenture</span>
+        <span>Capgemini</span><span>HCL</span><span>Tech Mahindra</span><span>IBM</span><span>Oracle</span>
+        <span>SAP</span><span>Deloitte</span><span>DXC Technology</span><span>NTT Data</span><span>Mphasis</span>
+        <span>Infosys</span><span>TCS</span><span>Wipro</span><span>Cognizant</span><span>Accenture</span>
+        <span>Capgemini</span><span>HCL</span><span>Tech Mahindra</span><span>IBM</span><span>Oracle</span>
+      </div>
+      <div class="partners-row rev" id="pRow2">
+        <span>LTIMindtree</span><span>Persistent</span><span>Freshworks</span><span>Zoho</span><span>Razorpay</span>
+        <span>PhonePe</span><span>BrowserStack</span><span>Hexaware</span><span>Birlasoft</span><span>Zensar</span>
+        <span>KPIT</span><span>Swiggy</span><span>Zomato</span><span>Paytm</span><span>Ola</span>
+        <span>LTIMindtree</span><span>Persistent</span><span>Freshworks</span><span>Zoho</span><span>Razorpay</span>
+        <span>PhonePe</span><span>BrowserStack</span><span>Hexaware</span><span>Birlasoft</span><span>Zensar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ LOCATIONS ══════════ -->
+  <section class="section" id="locations">
+    <div class="container">
+      <div class="section-tag">FIND US</div>
+      <h2 class="section-title">4 Branches + Live<br/><span class="neon-text">Online Classes</span></h2>
+      <p class="section-sub">Train at a branch near you, or join our live interactive online classes from anywhere in India.</p>
+
+      <div class="loc-grid">
+        <div class="loc-card">
+          <div class="loc-pin">📍</div>
+          <h3>Karvenagar</h3>
+          <p>4th Floor, Park Plaza, above Birla Super Market, State Bank Nagar, Karvenagar, Pune — 411052</p>
+          <a href="tel:+918888809416" class="loc-tel">+91 8888809416</a>
+          <a href="#demo" class="loc-btn">Book Demo</a>
+        </div>
+        <div class="loc-card">
+          <div class="loc-pin">📍</div>
+          <h3>Hadapsar</h3>
+          <p>Pune - Solapur Rd, above Maharashtra Electronics, Hadapsar Gaon, Hadapsar, Pune — 411013</p>
+          <a href="tel:+919673107070" class="loc-tel">+91 9673107070</a>
+          <a href="#demo" class="loc-btn">Book Demo</a>
+        </div>
+        <div class="loc-card">
+          <div class="loc-pin">📍</div>
+          <h3>Chinchwad</h3>
+          <p>Office no. 31B, Chinchwad Station Rd, above Dwarkadas Cloth Store, Pimpri-Chinchwad — 411019</p>
+          <a href="tel:+918857055009" class="loc-tel">+91 8857055009</a>
+          <a href="#demo" class="loc-btn">Book Demo</a>
+        </div>
+        <div class="loc-card">
+          <div class="loc-pin">📍</div>
+          <h3>Nagpur</h3>
+          <p>190/A, Mankapur Ring Rd, near Chatrapati Hall, Chatrapati Nagar, Nagpur — 440015</p>
+          <a href="tel:+919529204783" class="loc-tel">+91 9529204783</a>
+          <a href="#demo" class="loc-btn">Book Demo</a>
+        </div>
+        <div class="loc-card loc-online">
+          <div class="loc-pin">🖥️</div>
+          <h3>Live Online — All India</h3>
+          <p>Join from anywhere via our live interactive platform. Same trainer, same syllabus, same placement support as on-campus students.</p>
+          <a href="tel:+918888809416" class="loc-tel">+91 8888809416</a>
+          <a href="#demo" class="loc-btn loc-btn-neon">Enquire Online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FAQ ══════════ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title">Questions we hear<br/><span class="neon-text">every day</span></h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Do I need prior coding experience?</span>
+            <div class="faq-icon-wrap"><span class="faq-plus">+</span></div>
+          </button>
+          <div class="faq-a">
+            <p>No prior experience needed. Our courses start from basics and are designed for freshers and career changers. We've successfully placed students from commerce, science, and arts backgrounds.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>How long does placement take after completing?</span>
+            <div class="faq-icon-wrap"><span class="faq-plus">+</span></div>
+          </button>
+          <div class="faq-a">
+            <p>Most students get placed within 2–3 months after completing the course. Our 96% placement rate is tracked across all batches — we support you until you get the offer, not just until your course ends.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What is the batch size? Are classes live?</span>
+            <div class="faq-icon-wrap"><span class="faq-plus">+</span></div>
+          </button>
+          <div class="faq-a">
+            <p>We keep batches intentionally small so trainers can give personal attention — review your code, know your name, and guide your learning. All classes are live. No pre-recorded lectures.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Are the trainers working professionals?</span>
+            <div class="faq-icon-wrap"><span class="faq-plus">+</span></div>
+          </button>
+          <div class="faq-a">
+            <p>Yes. All trainers are currently working engineers at IT companies. They bring real tools, the interview patterns you'll actually face, and code reviews like a real tech lead would give.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>What does placement support include?</span>
+            <div class="faq-icon-wrap"><span class="faq-plus">+</span></div>
+          </button>
+          <div class="faq-a">
+            <p>Resume writing, ATS optimization, mock interviews (technical + HR), direct referrals to 1750+ hiring partners, pre-interview coaching, and salary negotiation guidance. We stay until you get the offer.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Can I join online from outside Pune?</span>
+            <div class="faq-icon-wrap"><span class="faq-plus">+</span></div>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. Our live online classes are available across India. You get the same trainer, same curriculum, and same placement support as students at our physical branches.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ DEMO / CTA ══════════ -->
+  <section class="section demo-section" id="demo">
+    <div class="demo-bg-glow"></div>
+    <div class="container">
+      <div class="demo-wrap">
+        <div class="demo-left">
+          <div class="section-tag">FREE DEMO CLASS</div>
+          <h2>Start with one<br/><span class="neon-text">free class</span></h2>
+          <p>No fees. No pressure. See the trainer teach live, ask questions, and then decide. That's our promise.</p>
+          <ul class="demo-perks">
+            <li><span class="perk-dot"></span> Free — no registration fee</li>
+            <li><span class="perk-dot"></span> Live class, not a recorded video</li>
+            <li><span class="perk-dot"></span> Ask the trainer anything</li>
+            <li><span class="perk-dot"></span> Get fee &amp; batch schedule</li>
+          </ul>
+          <div class="demo-phones">
+            <a href="tel:+918888809416">📞 +91 8888809416</a>
+            <a href="tel:+919673107070">📞 +91 9673107070</a>
+          </div>
+        </div>
+        <div class="demo-right">
+          <form class="demo-form" id="demoForm" novalidate>
+            <h3>Book Your Seat</h3>
+            <div class="field-group">
+              <input type="text" name="name" id="fname" placeholder="Full Name" required />
+              <label for="fname">Full Name</label>
+            </div>
+            <div class="field-group">
+              <input type="tel" name="phone" id="fphone" placeholder="Mobile Number" required pattern="[0-9]{10}" />
+              <label for="fphone">Mobile Number</label>
+            </div>
+            <div class="field-group">
+              <input type="email" name="email" id="femail" placeholder="Email Address" required />
+              <label for="femail">Email Address</label>
+            </div>
+            <div class="field-row">
+              <div class="field-group">
+                <select name="course" id="fcourse" required>
+                  <option value="" disabled selected>Select Course</option>
+                  <option>Java Full Stack</option>
+                  <option>Python Full Stack</option>
+                  <option>Software Testing</option>
+                  <option>Data Science &amp; ML</option>
+                  <option>Data Analytics</option>
+                  <option>MERN Full Stack</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <select name="location" id="flocation" required>
+                  <option value="" disabled selected>Location</option>
+                  <option>Karvenagar</option>
+                  <option>Hadapsar</option>
+                  <option>Chinchwad</option>
+                  <option>Nagpur</option>
+                  <option>Live Online</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn-neon btn-submit">
+              <span>Book My Free Demo</span>
+              <span class="btn-glow"></span>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">🚀</div>
+            <h4>You're in!</h4>
+            <p>Our team will call you within 24 hours to confirm your free demo. Check your inbox too.</p>
+            <a href="tel:+918888809416" class="btn-neon" style="margin-top:20px;display:inline-flex">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:16px">
+          <div class="logo-box">KA</div>
+          <span style="font-size:1.25rem;font-weight:700;color:#fff">Kiran<span class="logo-accent">Academy</span></span>
+        </div>
+        <p>#1 IT Training Institute in Pune since 2012.<br/>25,000+ students. 96% placement rate.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">fb</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <h4>Courses</h4>
+          <a href="#courses">Java Full Stack</a>
+          <a href="#courses">Python Full Stack</a>
+          <a href="#courses">Software Testing</a>
+          <a href="#courses">Data Science & ML</a>
+          <a href="#courses">Data Analytics</a>
+          <a href="#courses">MERN Stack</a>
+        </div>
+        <div class="fl-col">
+          <h4>Company</h4>
+          <a href="#why">About Us</a>
+          <a href="#placements">Placements</a>
+          <a href="#partners">Hiring Partners</a>
+          <a href="#locations">Our Branches</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="fl-col">
+          <h4>Contact</h4>
+          <a href="tel:+918888809416">+91 8888809416</a>
+          <a href="tel:+919673107070">+91 9673107070</a>
+          <a href="tel:+918857055009">+91 8857055009</a>
+          <a href="tel:+919529204783">+91 9529204783 (Nagpur)</a>
+          <span style="color:#555;font-size:.8rem;margin-top:8px;display:block">Karvenagar · Hadapsar · Chinchwad · Nagpur</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 The Kiran Academy. All rights reserved.</span>
+        <span>Made with 💚 for 25,000+ alumni</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <a href="#demo" class="float-cta" id="floatCta">
+    🎓 Book Free Demo
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
